@@ -1,0 +1,22 @@
+# Data files
+data/
+*.h5ad
+*.dataset/
+
+# Model checkpoints
+*.safetensors
+*.pt
+*.pth
+
+# SLURM outputs
+*.out
+*.err
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Personal configs
+config_*.sh
+!config_example.sh
