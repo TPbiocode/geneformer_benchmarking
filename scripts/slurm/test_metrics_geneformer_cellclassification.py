@@ -39,6 +39,7 @@ STATE_KEY = os.environ.get("STATE_KEY", "cell_type_l3")
 
 # General compute settings
 NPROC = int(os.environ.get("NPROC", "16"))
+FORWARD_BATCH_SIZE = int(os.environ.get("FORWARD_BATCH_SIZE", "200"))
 
 # Derive model family (V1 or V2) from MODEL_VERSION for Classifier
 # Extract "V1" or "V2" from strings like "V1-10M", "V2-104M", "V2-316M"
@@ -89,7 +90,7 @@ cc = Classifier(
     training_args=None,   # <- no training args needed
     freeze_layers=0,
     num_crossval_splits=1,
-    forward_batch_size=200,
+    forward_batch_size=FORWARD_BATCH_SIZE,
     model_version=MODEL_FAMILY,  # Automatically derived from MODEL_VERSION (V1 or V2)
     nproc=NPROC,
 )
