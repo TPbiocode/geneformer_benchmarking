@@ -20,3 +20,4 @@ __pycache__/
 # Personal configs
 config_*.sh
 !config_example.sh
+!config_test_example.sh
