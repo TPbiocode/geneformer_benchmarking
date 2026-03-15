@@ -1,6 +1,6 @@
 # Geneformer Benchmarking
 
-Benchmarking and training scripts for comparing Geneformer models (V1, V2-104M, V2-316M) on single-cell RNA-seq cell type classification tasks.        
+This repository contains reproducible benchmarking scripts for Geneformer-based single-cell RNA-seq cell type classification, including donor-level splits, tokenization, model training, and evaluation for comparing Geneformer models (V1-10M, V2-104M, V2-316M).        
 
 ## Overview
 This repository contains:
